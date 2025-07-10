@@ -70,14 +70,14 @@ def generate(model, placeholder, batch_size=32):
     return X
 
 
-st.title("🧠 Modelo de Diffusion en Vivo")
+st.title("🧠 Live Diffusion Model")
 
-model = tf_keras.models.load_model('cap_17/my_diffusion_model')
+model = tf_keras.models.load_model('my_diffusion_model')
 
 T = 4000
 alpha, alpha_cumprod, beta = variance_schedule(T)
 
-if st.toggle("🚀 Ejecutar modelo"):
+if st.toggle("Run Model"):
     placeholder = st.empty()
     contador = st.empty()
     X_gen = generate(model, placeholder)
