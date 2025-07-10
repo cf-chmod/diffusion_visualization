@@ -1,4 +1,4 @@
-tensorflow==2.19.0
+tensorflow==2.18.0
 tensorflow-datasets==4.9.7
 tensorflow-hub==0.16.1
 tensorflow-metadata==1.16.1
